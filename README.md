@@ -1,6 +1,5 @@
 # ZeroMQ-BullsAndCows
-
-This project utilizes ZMQ to share data between Python and C.
+Uzing 
 
 note ; Now using C++ and C to communicate 
 Game/Server is built using -> C++
