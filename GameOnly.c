@@ -1,5 +1,4 @@
 /* BULLS N COWS */
-
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
