@@ -1,7 +1,5 @@
 # ZeroMQ-BullsAndCows
-Uzing 
 
-note ; Now using C++ and C to communicate 
 Game/Server is built using -> C++
 Client is built using  -> C
 
