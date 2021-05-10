@@ -21,9 +21,11 @@ int main()
     int result = rand()%9000 + 1000;
     int resultArray[nummer];
     int resultArrayCopy[nummer];
+    char Response;
     SplitNummer(result, resultArray, nummer);	/// resultaat gaat naar array
     /// loop tot de input juist is
-    while(1)
+    StartGame:
+    while(true)
     {
         /// input a number to guess
         cout << "input a " << nummer << "-digits number : ";
@@ -87,9 +89,24 @@ int main()
     /// finale
     cout << "---\n";
     cout << "You guess it right\n";
+    
     cout << "The correct number is " << result << endl;;
+    
     cout << "These all the numbers you'd guessed.\n";
     for (int i = 0; i < size; i++)
-        cout << Guesses[i] << endl;
+    cout << Guesses[i] << endl;
+    
+    cout << "Would u Like to play again? ( Y/N) .\n";
+    cin >> Response;
+    if (Response == 'Y' ) //not "Y" but only one 'Y')
+    {
+   goto StartGame;
+    }
+    else if (Response == 'N')
+    {
+    cout << "Bye!.\n";
+    }
+
+
     return 0;
 }
