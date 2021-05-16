@@ -28,22 +28,25 @@ int main ()
 
 
     sleep(1);
-    
+
     /*
     std::stringstream gc;
     gc << " your guess player" << guess;
     std:: string g = gc.str();
     rs = zmq_send (sender , g.c_str(),  g.size() , 0);
     */
+
+    printf("Whats ur guess?");
+    scanf( "%s", guess);
     
-    
-    rs = zmq_send (sender , "BC?>1111>" ,  9 , 0);
-    printf("Send bytes = %d", rs );
+
+    rs = zmq_send (sender , "BC?>guess>" ,  9 , 0);
+
     char buf[256];
     int Guess [256];
-    
-    
-    
+
+
+
 
     while (1)
     {
