@@ -8,6 +8,8 @@
 #include <sstream>
 #include <string>
 
+using namespace std;
+
 
 int main (int argc, char * argv[])
 
@@ -25,20 +27,26 @@ int main (int argc, char * argv[])
     int rs = zmq_connect (sender,"tcp://benternet.pxl-ea-ict.be:24041"); ///"tcp://benternet.pxl-ea-ict.be:24041");
     int rr = zmq_connect (receiver, "tcp://benternet.pxl-ea-ict.be:24042");///"tcp://benternet.pxl-ea-ict.be:24042"); ///important voor receive
 
+    int rc = zmq_setsockopt(receiver , ZMQ_SUBSCRIBE , "BC!>" , 4);  ///important , op wat je wilt ontvangen, decides what u receive , BENTERNET SENDS
+     sleep(1); ///Bcz send and receive too quick
+    printf("BC Client Started, Please enter a 4 digit number\n");
+    rs = zmq_send (sender , "BC?>Join" ,  17 , 0);
+
+
     char guess[100];
     char sendGuess[100];
     char buf [256];
     int guesshere [256];
     char name[256];
     char sendName [256];
-    assert (rs == 0);
+    //assert (rs == 0);
 
-    printf("Whats ur name");
-    scanf( "%s", name);
-    strcpy(sendName, messageJoin);
-    strcat (sendName, name) ;
-    memset(buf,0,256);
-    zmq_send(sender, sendName, strlen(sendName) , 0);
+//    printf("Whats ur name");
+//    scanf( "%s", name);
+//    strcpy(sendName, messageJoin);
+//    strcat (sendName, name) ;
+//    memset(buf,0,256);
+//    zmq_send(sender, sendName, strlen(sendName) , 0);
 
 
 
@@ -47,6 +55,7 @@ int main (int argc, char * argv[])
     while (true)
 
     {
+
 
 
 
@@ -68,16 +77,24 @@ int main (int argc, char * argv[])
 
      }
 
-// receive guess
+     std::string rc = "BC!>";
+     rc = zmq_recv (receiver, buf ,256 , 0 );
+     /// wenselijk heb ik de volgende string ontvangen BC!>0 cows  --> ik heb nodig 1111
+     rc = buf;
+     buf[rr] = '\0'; ///String stop
+     printf("Received: %s" , buf);
+
+     std :: string strGuess = buf; // numbers in buff
+     std :: size_t posPart1 = strGuess.find ( ">");
+     std :: string Part1= strGuess.substr(0, posPart1);
+     std :: string Part1After = strGuess.substr ( posPart1 + 1);
 
 
+     std :: size_t posPart2 = Part1After.find(">");
+     std :: string Part2= Part1After.substr(0, posPart2);
+     std :: string Part2After = Part1After.substr(posPart2 +1);
 
-
-
-        zmq_close(receiver);
-        zmq_ctx_destroy(context);
-        return 0;
-
+     std :: cout << '\n' << Part2After;
 
 }
 
