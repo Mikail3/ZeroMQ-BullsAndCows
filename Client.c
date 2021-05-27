@@ -16,7 +16,7 @@ int main (int argc, char * argv[])
 {
 
     const char *messageGuess = (argc > 1)? argv [1]: "BC?>Guess>";
-    const char *messageJoin = (argc > 1)? argv [1]: "BC?>Join>";
+   // const char *messageJoin = (argc > 1)? argv [1]: "BC?>Join>";
 
 
     void *context = zmq_ctx_new ();
@@ -30,7 +30,7 @@ int main (int argc, char * argv[])
     int rc = zmq_setsockopt(receiver , ZMQ_SUBSCRIBE , "BC!>" , 4);  ///important , op wat je wilt ontvangen, decides what u receive , BENTERNET SENDS
      sleep(1); ///Bcz send and receive too quick
     printf("BC Client Started, Please enter a 4 digit number\n");
-    rs = zmq_send (sender , "BC?>Join" ,  17 , 0);
+   // rs = zmq_send (sender , "BC?>Join" ,  17 , 0);
 
 
     char guess[100];
@@ -39,6 +39,7 @@ int main (int argc, char * argv[])
     int guesshere [256];
     char name[256];
     char sendName [256];
+
     //assert (rs == 0);
 
 //    printf("Whats ur name");
@@ -75,13 +76,13 @@ int main (int argc, char * argv[])
     memset(buf,0,256);
     zmq_send(sender, sendGuess, strlen(sendGuess) , 0);
 
-     }
 
-     std::string rc = "BC!>";
+
+
      rc = zmq_recv (receiver, buf ,256 , 0 );
      /// wenselijk heb ik de volgende string ontvangen BC!>0 cows  --> ik heb nodig 1111
-     rc = buf;
-     buf[rr] = '\0'; ///String stop
+
+     buf[rc] = '\0'; ///String stop
      printf("Received: %s" , buf);
 
      std :: string strGuess = buf; // numbers in buff
@@ -95,6 +96,7 @@ int main (int argc, char * argv[])
      std :: string Part2After = Part1After.substr(posPart2 +1);
 
      std :: cout << '\n' << Part2After;
+     }
 
 }
 
