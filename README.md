@@ -93,14 +93,16 @@ Here's a blank template to get started:
 
 
 Bulls&Cows a guessing game based on the computer generating 4 random integers, also called mastermind.
+
 U as the player have to guess a number ranging from 0000-9999
+
 Two things might happen;
 
 
-(`the user guesses the correct number on the correct place and gets **cows**`)
+(`the user guesses the correct number on the correct place and gets cows`)
 
 
-(`the user guesses the correct number on the incorrect place and gets **bulls* `)
+(`the user guesses the correct number on the incorrect place and gets bulls `)
 
 
 
