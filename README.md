@@ -152,7 +152,7 @@ Option 2: ZeroMQ includes for MINGW64 prebuilt for MINGW64
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usage and expectations
 
 1. Run the (`Server`)
 2. Run the (`Broker`)
