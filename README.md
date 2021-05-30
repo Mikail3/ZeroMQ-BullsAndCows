@@ -32,8 +32,8 @@
 <br />
 <p align="center">
   <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows">
-    <img src="https://github.com/Mikail3/ZeroMQ-BullsAndCows/blob/dev/BC.PNG"
-         alt="Logo" width="80" height="80">
+    <!--<img src="https://github.com/Mikail3/ZeroMQ-BullsAndCows/blob/dev/BC.PNG"
+         alt="Logo" width="80" height="80"> -->
   </a>
 
   <h3 align="center">ZeroMQ Bulls&Cows</h3>
