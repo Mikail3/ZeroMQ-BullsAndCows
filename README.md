@@ -198,7 +198,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Mikail Cinar- [@linkedin_handle](https://www.linkedin.com/in/mikail-cinar-037bb5197/) - email
+Mikail Cinar- [@Linkedin](https://www.linkedin.com/in/mikail-cinar-037bb5197/) - [@email] (mikail.cinar@student.pxl.be)
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
