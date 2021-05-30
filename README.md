@@ -32,7 +32,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows">
-    <img src="![image](BC.PNG)"
+    <img src="https://github.com/Mikail3/ZeroMQ-BullsAndCows/blob/dev/BC.PNG"
          alt="Logo" width="80" height="80">
   </a>
 
