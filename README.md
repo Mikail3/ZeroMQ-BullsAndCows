@@ -137,7 +137,7 @@ Create the folders in the same dir as the game, following folders have to be mad
 
 `include , lib , libzmq `
 
-**ZeroMQ needs includes do not forget them**
+# Includes 
 
 Option 1: ZeroMQ includes for MINGW64 with `MSYS2`
   ```sh
@@ -154,6 +154,7 @@ Option 2: ZeroMQ includes for MINGW64 prebuilt for MINGW64
    ```sh
    git clone https://github.com/Mikail3/ZeroMQ-BullsAndCows.git
    ```
+ # .pro File
 Make sure to change the `.pro` file in QT ,the following lines have to be added:
 
 
