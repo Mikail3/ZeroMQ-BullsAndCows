@@ -169,12 +169,12 @@ Make sure to change the `.pro` file in QT ,the following lines have to be added:
 ## Usage and expectations
 
 1. Run the `Server`
-2. Run the `Broker`
+2. Run the `Broker aka Benternet`
 3. Run the `Client`
 4. Make a 4 digit guess on the client, the client pushes `BC?>Guess>1111`
-5. The message gets over the broker.
+5. The message gets pushed over the broker.
 6. The server is subscribed on on `BC?>` and receives `BC?>Guess>1111`
-7. The received message gets splitted and the number 1111 is being processed by the server
+7. The received message gets splitted and parsed and the number 1111 is being processed by the server.
 8. The server checks the number.
 9. The server replies and pushes the amount of bulls or cows with (`BC!>0 bulls and BC!>4 bulls`)
 10. The client is subscribed on `BC!>` and receives what the result is.
