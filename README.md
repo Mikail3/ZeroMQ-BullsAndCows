@@ -98,15 +98,15 @@ In order to achieve the logic behind the different types of sockets, I made a ga
 
 Bulls&Cows a guessing game based on the computer generating 4 random integers, also called mastermind.
 
-U as the player have to guess a number ranging from 0000-9999
+U as the player have to guess a number ranging from 0000-9999, the main goal is to guess 4 bulls!
 
 Two things might happen;
 
 
-(`the user guesses the correct number on the correct place and gets cows`)
+`the user guesses the correct number on the correct place and gets cows`
 
 
-(`the user guesses the correct number on the incorrect place and gets bulls `)
+`the user guesses the correct number on the incorrect place and gets bulls `
 
 
 
@@ -125,14 +125,14 @@ Two things might happen;
 To get a local copy up and running follow these simple steps.
 
 ### Port forwarding
-Surf to your providers website where you will be port forwarding your (`TCP to 24059`) and (`UDP to 24058`) 
+Surf to your providers website where you will be port forwarding your `TCP to 24059` and `UDP to 24058` 
 
 
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
 
-Option 1: ZeroMQ includes for MINGW64 with (`MSYS2`)
+Option 1: ZeroMQ includes for MINGW64 with `MSYS2`
   ```sh
   $ pacman -S mingw-w64-x86_64-zeromq
   ```
@@ -154,16 +154,16 @@ Option 2: ZeroMQ includes for MINGW64 prebuilt for MINGW64
 <!-- USAGE EXAMPLES -->
 ## Usage and expectations
 
-1. Run the (`Server`)
-2. Run the (`Broker`)
-3. Run the (`Client`)
-4. Make a 4 digit guess on the client, the client pushes (`BC?>Guess>1111`)
+1. Run the `Server`
+2. Run the `Broker`
+3. Run the `Client`
+4. Make a 4 digit guess on the client, the client pushes `BC?>Guess>1111`
 5. The message gets over the broker.
-6. The server is subscribed on on (`BC?>`) and receives (`BC?>Guess>1111`)
+6. The server is subscribed on on `BC?>` and receives `BC?>Guess>1111`
 7. The received message gets splitted and the number 1111 is being processed by the server
 8. The server checks the number.
 9. The server replies and pushes the amount of bulls or cows with (`BC!>0 bulls and BC!>4 bulls`)
-10. The client is subscribed on (`BC!>`) and receives what the result is.
+10. The client is subscribed on `BC!>` and receives what the result is.
 11. Right answer? Check the broker! And the client can continue guessing. Leaving the game does not restart it, the next game will continue where you left off.
 12. enjoy!
 
@@ -198,7 +198,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Mikail Cinar- [@linkedin_handle](https://www.linkedin.com/in/mikail-cinar-037bb5197/) - email
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
