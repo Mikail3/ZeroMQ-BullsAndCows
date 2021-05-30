@@ -155,7 +155,7 @@ Option 2: ZeroMQ includes for MINGW64 prebuilt for MINGW64
    ```sh
    git clone https://github.com/Mikail3/ZeroMQ-BullsAndCows.git
    ```
- # .pro File
+ ### .pro File
 Make sure to change the `.pro` file in QT ,the following lines have to be added:
 
 
