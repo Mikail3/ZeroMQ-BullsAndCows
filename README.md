@@ -92,6 +92,9 @@ Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
 `github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
 -->
+The main goal of this project was to learn about network programming with the open source messaging libary ZeroMQ
+
+In order to achieve the logic behind the different types of sockets, I made a game.
 
 Bulls&Cows a guessing game based on the computer generating 4 random integers, also called mastermind.
 
@@ -128,6 +131,7 @@ Surf to your providers website where you will be port forwarding your (`TCP to 2
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
+
 Option 1: ZeroMQ includes for MINGW64 with (`MSYS2`)
   ```sh
   $ pacman -S mingw-w64-x86_64-zeromq
