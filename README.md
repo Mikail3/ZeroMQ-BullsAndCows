@@ -128,10 +128,14 @@ Surf to your providers website where you will be port forwarding your (`TCP to 2
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* ZeroMQ includes for MINGW64 with (`MSYS2`)
+Option 1: ZeroMQ includes for MINGW64 with (`MSYS2`)
   ```sh
   $ pacman -S mingw-w64-x86_64-zeromq
   ```
+Option 2: ZeroMQ includes for MINGW64 prebuilt for MINGW64
+  ```sh
+   git clone https://github.com/Mikail3/ZeroMQ-BullsAndCows/includes.git
+   ```
 
 ### Installation
 
@@ -191,7 +195,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
+* [https://github.com/Bart-PXL]()
 * []()
 * []()
 
