@@ -92,6 +92,15 @@ Here's a blank template to get started:
 `github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
 
 
+Bulls&Cows a guessing game based on the computer generating 4 random integers, also called mastermind.
+U as the player have to guess a number ranging from 0000-9999
+Two things might happen;
+(`the user guesses the correct number on the correct place and gets **cows**`)
+(`the user guesses the correct number on the incorrect place and gets **bulls* `)
+
+
+
+
 ### Built With
 
 * [https://www.qt.io](v15.4.1)  
