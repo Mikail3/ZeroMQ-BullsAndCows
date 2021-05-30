@@ -40,9 +40,10 @@
 
   <p align="center">
     Bulls&Cows is a guessing game where the computer generates a random intger from 0000 to 9999. 
+  
     If the user guesses a number two things happen.
-    * [u get cow](u get cow)
-    * []()
+    * []() U guess a **correct number on the correct place**, u will get a **cow**
+    * []() U guess a **correct number on the incorrect place**, u will get a **bulls**
     The goal of the game is to achieve 4 cows
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
