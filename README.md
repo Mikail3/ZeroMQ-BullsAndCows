@@ -200,7 +200,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Mikail Cinar- [@Linkedin](https://www.linkedin.com/in/mikail-cinar-037bb5197/) 
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/Mikail3/ZeroMQ-BullsAndCows](https://github.com/Mikail3/ZeroMQ-BullsAndCows)
 
 
 
@@ -208,8 +208,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 ## Acknowledgements
 
 *  Bart Stukken (https://github.com/Bart-PXL)
-* []()
-* []()
+
 
 
 
