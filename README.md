@@ -122,28 +122,24 @@ Two things might happen;
 To get a local copy up and running follow these simple steps.
 
 ### Port forwarding
-Surf to your providers website where you will be port forwarding your (`TCP to 24059`) and (`UDP 24058`) 
+Surf to your providers website where you will be port forwarding your (`TCP to 24059`) and (`UDP to 24058`) 
 
 
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* zeroMQ includes for MINGW64 
+* ZeroMQ includes for MINGW64 with (`MSYS2`)
   ```sh
-  npm install npm@latest -g
+  $ pacman -S mingw-w64-x86_64-zeromq
   ```
 
 ### Installation
 
-1. Clone the repo
+ Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Mikail3/ZeroMQ-BullsAndCows.git
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-   
+
 
 
 
