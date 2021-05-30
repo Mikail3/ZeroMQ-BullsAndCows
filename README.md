@@ -94,7 +94,7 @@ Here's a blank template to get started:
 -->
 The main goal of this project was to learn about network programming with the open source messaging libary ZeroMQ
 
-In order to achieve the logic behind the different types of sockets, I made a game.
+In order to achieve the logic behind the different types of sockets, I made a game with a single client whom is the player, and a server where the game is implemented.
 
 Bulls&Cows a guessing game based on the computer generating 4 random integers, also called mastermind.
 
