@@ -163,6 +163,8 @@ Option 2: ZeroMQ includes for MINGW64 prebuilt for MINGW64
 7. The received message gets splitted and the number 1111 is being processed by the server
 8. The server checks the number.
 9. The server replies and pushes the amount of bulls or cows with (`BC!>0 bulls and BC!>4 bulls`)
+10. The client is subscribed on (`BC!>`) and receives what the result is.
+11. Right answer? Check the broker! And the client can continue guessing. Leaving the game does not restart it, the next restart will continue where you left off.
 
 
 <!-- ROADMAP -->
