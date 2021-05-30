@@ -94,8 +94,8 @@ Here's a blank template to get started:
 
 ### Built With
 
-* [https://www.qt.io/]()  
-* [https://zeromq.org/]()
+* [https://www.qt.io](v15.4.1)  
+* [https://zeromq.org]()
 * []()
 
 
