@@ -198,7 +198,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Mikail Cinar- [@Linkedin](https://www.linkedin.com/in/mikail-cinar-037bb5197/) - [@email] (mikail.cinar@student.pxl.be)
+Mikail Cinar- [@Linkedin](https://www.linkedin.com/in/mikail-cinar-037bb5197/) 
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
@@ -207,7 +207,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [https://github.com/Bart-PXL]()
+*  Bart Stukken (https://github.com/Bart-PXL)
 * []()
 * []()
 
