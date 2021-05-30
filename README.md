@@ -69,9 +69,10 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+         <li><a href="#includes">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#usage and expectations">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -137,7 +138,7 @@ Create the folders in the same dir as the game, following folders have to be mad
 
 `include , lib , libzmq `
 
-#### Includes 
+#### Includes for ZeroMQ
 
 Option 1: ZeroMQ includes for MINGW64 with `MSYS2`
   ```sh
