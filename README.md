@@ -132,15 +132,12 @@ Surf to your providers website where you will be port forwarding your `TCP to 24
 
 This is an example of how to list things you need to use the software and how to install them. 
 
-Create the folders in the same `dir` as the game, following folders have to be made:
+Create the folders in the same dir as the game, following folders have to be made:
+
 
 `include , lib , libzmq `
 
-Make sure to change the `.pro` file in QT ,the following lines have to be added:
-
-`DEFINES += ZMQ_STATIC`
-`LIBS += -L$$PWD/../lib -lzmq -lws2_32 -lIphlpapi`
-`INCLUDEPATH += $$PWD/../include`
+**ZeroMQ needs includes do not forget them**
 
 Option 1: ZeroMQ includes for MINGW64 with `MSYS2`
   ```sh
@@ -157,7 +154,12 @@ Option 2: ZeroMQ includes for MINGW64 prebuilt for MINGW64
    ```sh
    git clone https://github.com/Mikail3/ZeroMQ-BullsAndCows.git
    ```
+Make sure to change the `.pro` file in QT ,the following lines have to be added:
 
+
+`DEFINES += ZMQ_STATIC`
+`LIBS += -L$$PWD/../lib -lzmq -lws2_32 -lIphlpapi`
+`INCLUDEPATH += $$PWD/../include`
 
 
 
