@@ -154,10 +154,15 @@ Option 2: ZeroMQ includes for MINGW64 prebuilt for MINGW64
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+1. Run the (`Server`)
+2. Run the (`Broker`)
+3. Run the (`Client`)
+4. Make a 4 digit guess on the client, the client pushes (`BC?>Guess>1111`)
+5. The message gets over the broker.
+6. The server is subscribed on on (`BC?>`) and receives (`BC?>Guess>1111`)
+7. The received message gets splitted and the number 1111 is being processed by the server
+8. The server checks the number.
+9. The server replies and pushes the amount of bulls or cows with (`BC!>0 bulls and BC!>4 bulls`)
 
 
 <!-- ROADMAP -->
