@@ -32,28 +32,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Bulls&Cows</h3>
+  <h3 align="center">project_title</h3>
 
   <p align="center">
-    Bulls&Cows is a guessing game where the computer generates a random intger from 0000 to 9999. 
-  
-    If the user guesses a number two things happen.
-    * []() U guess a **correct number on the correct place**, u will get a **cow**
-    * []() U guess a **correct number on the incorrect place**, u will get a **bulls**
-    The goal of the game is to achieve 4 cows
+    project_description
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows/issues">Request Feature</a>
   </p>
 </p>
 
@@ -99,8 +94,8 @@ Here's a blank template to get started:
 
 ### Built With
 
-* []()
-* []()
+* [https://www.qt.io/]()  
+* [https://zeromq.org/]()
 * []()
 
 
@@ -122,7 +117,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone  https://github.com/Mikail3/ZeroMQ-BullsAndCows.git
+   git clone https://github.com/github_username/repo_name.git
    ```
 2. Install NPM packages
    ```sh
