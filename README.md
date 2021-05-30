@@ -69,7 +69,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-         <li><a href="#includes">Installation</a></li>
+         <li><a href="#includes">Includes</a></li>
       </ul>
     </li>
     <li><a href="#usage and expectations">Usage</a></li>
