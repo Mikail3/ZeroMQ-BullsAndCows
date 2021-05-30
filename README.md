@@ -25,7 +25,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/mikail-cinar-037bb5197/]
 
 
 
@@ -85,12 +85,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<!--
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
 `github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
-
+-->
 
 Bulls&Cows a guessing game based on the computer generating 4 random integers, also called mastermind.
 
@@ -111,7 +112,7 @@ Two things might happen;
 
 * [https://www.qt.io](v15.4.1)  
 * [https://zeromq.org]()
-* []()
+* [MinZMQt_Windows_distributable]()
 
 
 
@@ -120,10 +121,14 @@ Two things might happen;
 
 To get a local copy up and running follow these simple steps.
 
+### Port forwarding
+Surf to your providers website where you will be port forwarding your (`TCP to 24059`) and (`UDP 24058`) 
+
+
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* zeroMQ includes for MINGW64 
   ```sh
   npm install npm@latest -g
   ```
@@ -138,6 +143,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
+   
 
 
 
