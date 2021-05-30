@@ -114,8 +114,8 @@ Two things might happen;
 
 ### Built With
 
-* [https://www.qt.io](v15.4.1)  
-* [https://zeromq.org]()
+* [https://www.qt.io] `v15.4.1`
+* [https://zeromq.org]() 
 * [MinZMQt_Windows_distributable]()
 
 
