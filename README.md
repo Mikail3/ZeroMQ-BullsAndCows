@@ -32,8 +32,8 @@
 <br />
 <p align="center">
   <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows">
-    <img src="![image](https://user-images.githubusercontent.com/43419941/120118311-31cf7e80-c192-11eb-9849-a5d9ef73d136.png)
-" alt="Logo" width="80" height="80">
+    <img src="![image](https://user-images.githubusercontent.com/43419941/120118331-4dd32000-c192-11eb-8d67-9aa6271d238a.png)"
+         alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">project_title</h3>
