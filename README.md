@@ -172,12 +172,12 @@ Make sure to change the `.pro` file in QT ,the following lines have to be added:
 2. Run the `Broker aka Benternet`
 3. Run the `Client`
 4. Make a 4 digit guess on the client, the client pushes `BC?>Guess>1111`
-5. The message gets pushed over the broker.
-6. The server is subscribed on on `BC?>` and receives `BC?>Guess>1111`
-7. The received message gets splitted and parsed and the number 1111 is being processed by the server.
-8. The server checks the number.
-9. The server replies and pushes the amount of bulls or cows with (`BC!>0 bulls and BC!>4 bulls`)
-10. The client is subscribed on `BC!>` and receives what the result is.
+5. The message gets pushed by using `zmq_send` over the broker.
+6. The server is subscribed using `ZMQ_SUBSCRIBE`on on `BC?>` and receives `BC?>Guess>1111`while using `zmq_receive`
+7. The received message gets splitted and parsed with `std::string`, and the number 1111 is being processed by the server and a `std::substring` is being made.
+8. The server checks the received number by the client.
+9. The server replies and pushes the amount of bulls or cows with `zmq_send` (`BC!>0 bulls and BC!>4 bulls`), the client parses the reply with `std::string` aswell.
+10. The client is subscribed on `BC!>` and receives what the result is by filtering the exclamation mark.
 11. Right answer? Check the broker! And the client can continue guessing. Leaving the game does not restart it, the next game will continue where you left off.
 12. enjoy!
 
