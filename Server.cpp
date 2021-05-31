@@ -466,7 +466,7 @@ while(1)
         std:: string p = np.str();
         rs = zmq_send (sender , p.c_str() , p.size () , 0);
 
-     std :: cout << '\n' << "BC?>Join" <<Part2Copy << '\n';
+     std :: cout << '\n' << "BC?>Guess" <<Part2Copy << '\n';
 
        if (!cin)/// (Guesses[size] < 1000 || Guesses[size] > 9999) check if input is int
         {
@@ -474,7 +474,7 @@ while(1)
             cin.ignore(256,  '\n');
 
             std::stringstream fd;
-            fd << "BC!>!!! " << nummer << "-Digits bruh pls !!!\n";
+            fd << "BC!> " << nummer << "-Digits bruh pls !!!\n";
             std:: string f = fd.str();
             rs = zmq_send (sender , f.c_str(),  f.size() , 0);
             continue;
