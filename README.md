@@ -175,7 +175,7 @@ Make sure to change the `.pro` file in QT ,the following lines have to be added:
 5. The message gets pushed by using `zmq_send` over the broker.
 6. The server is subscribed using `ZMQ_SUBSCRIBE`on on `BC?>` and receives `BC?>Guess>1111`while using `zmq_receive`
 7. The received message gets splitted and parsed with `std::string`, and the number 1111 is being processed by the server and a `std::substring` is being made.
-8. The server checks the received number by the client.
+8. The server checks the received number by the client, if input is larger or smaller then 4 server responds with `BC!>4-Digits Bruh pls!`.
 9. The server replies and pushes the amount of bulls or cows with `zmq_send` (`BC!>0 bulls and BC!>4 bulls`), the client parses the reply with `std::string` aswell.
 10. The client is subscribed on `BC!>` and receives what the result is by filtering the exclamation mark.
 11. Right answer? Check the broker! And the client can continue guessing. Leaving the game does not restart it, the next game will continue where you left off.
@@ -192,7 +192,7 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
