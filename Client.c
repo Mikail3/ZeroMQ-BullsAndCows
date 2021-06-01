@@ -16,7 +16,7 @@ int main (int argc, char * argv[])
 {
 
     const char *messageGuess = (argc > 1)? argv [1]: "BC?>Guess>";
-   // const char *messageJoin = (argc > 1)? argv [1]: "BC?>Join>";
+
 
 
     void *context = zmq_ctx_new ();
@@ -37,8 +37,7 @@ int main (int argc, char * argv[])
     char sendGuess[100];
     char buf [256];
     int guesshere [256];
-    char name[256];
-    char sendName [256];
+
 
     //assert (rs == 0);
 
@@ -75,11 +74,7 @@ int main (int argc, char * argv[])
     strcat (sendGuess, guess) ;
     memset(buf,0,256);
     zmq_send(sender, sendGuess, strlen(sendGuess) , 0);
-
-
-
-
-     rc = zmq_recv (receiver, buf ,256 , 0 );
+    rc = zmq_recv (receiver, buf ,256 , 0 );
      /// wenselijk heb ik de volgende string ontvangen BC!>0 cows  --> ik heb nodig 1111
 
      buf[rc] = '\0'; ///String stop
