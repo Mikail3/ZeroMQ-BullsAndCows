@@ -16,6 +16,7 @@ int main (int argc, char * argv[])
 {
 
     const char *messageGuess = (argc > 1)? argv [1]: "BC?>Guess>";
+    const char *messageJoin = (argc > 1)? argv [1]: "BC?<Join<";
 
 
 
@@ -79,6 +80,7 @@ int main (int argc, char * argv[])
 
      buf[rc] = '\0'; ///String stop
      printf("Received: %s" , buf);
+     rc = zmq_recv (receiver, buf ,256 , 0 );
 
      std :: string strGuess = buf; // numbers in buff
      std :: size_t posPart1 = strGuess.find ( ">");
