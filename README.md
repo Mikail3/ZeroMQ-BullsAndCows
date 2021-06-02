@@ -50,7 +50,6 @@
     ·
     <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows/issues">Request Feature</a>
   
-    <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows/wiki">Wiki</a>
   </p>
 </p>
 
@@ -168,7 +167,7 @@ Make sure to change the `.pro` file in QT ,the following lines have to be added:
 
 
 <!-- USAGE EXAMPLES -->
-## Usage and expectations
+## Usage and expectation
 
 1. Run the `Server`
 2. Run the `Broker aka Benternet`
@@ -181,7 +180,8 @@ Make sure to change the `.pro` file in QT ,the following lines have to be added:
 9. The server replies and pushes the amount of bulls or cows with `zmq_send` (`BC!>0 bulls and BC!>4 bulls`), the client parses the reply with `std::string` aswell.
 10. The client is subscribed on `BC!>` and receives what the result is by filtering the exclamation mark.
 11. Right answer? Check the broker! And the client can continue guessing. Leaving the game does not restart it, the next game will continue where you left off.
-12. enjoy!
+12. Enjoy! Still not clear? Check the `Wiki` for a flowchart
+
 
 
 <!-- ROADMAP -->
