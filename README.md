@@ -49,6 +49,8 @@
     <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows/issues">Report Bug</a>
     ·
     <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows/issues">Request Feature</a>
+  
+    <a href="https://github.com/Mikail3/ZeroMQ-BullsAndCows/wiki">Wiki</a>
   </p>
 </p>
 
